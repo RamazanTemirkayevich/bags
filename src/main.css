@@ -1,4 +1,8 @@
 /* header */
+.header {
+    background-color: var(--bg-main);
+}
+
 .header-wrapper__burger::after,
 .header-wrapper__burger::before,
 .header-wrapper__burger span {
@@ -20,4 +24,156 @@
 }
 .header-wrapper__burger span {
     top: 45%;
+}
+
+.header-wrapper__burger.active::before,
+.header-wrapper__burger.active::after {
+    top: 45%;
+}
+
+.header-wrapper__burger.active::before {
+    transform: rotate(-45deg);
+}
+.header-wrapper__burger.active::after {
+    transform: rotate(45deg);
+}
+.header-wrapper__burger.active span {
+    scale: 0;
+}
+
+/* nav */
+
+.nav {
+    position: fixed;
+
+    gap: 35px;
+
+    top: -100%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 12;
+    transition: .3s;
+    background-color: var(--bg-main);
+}
+
+.nav.active {
+    top: 0;
+}
+
+.nav .nav-wrapper {
+    padding: 125px 20px 250px 20px;
+}
+
+/* hero */
+
+.hero {
+    position: relative;
+    background: url('./img/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero::after {
+    position: absolute;
+
+    content: '';
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.hero .hero-wrapper h1 {
+    font-family: 'EBGaramond';
+}
+
+/* impression */
+
+.impression .impression-wrapper img {
+    display: flex;
+    width: 100%;
+    max-width: 330px;
+}
+
+/* choise */
+
+.choise .choise-wrapper li img {
+    max-width: 406px;
+}
+.collection .collection-wrapper li img {
+    max-width: 303px;
+}
+
+@media (min-width: 768px) {
+    .choise .choise-wrapper li {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav .nav-wrapper {
+        padding: 4px 20px 0 20px;
+    }
+
+    .hero {
+        margin-top: 4.5rem !important;
+        height: 640px;
+    }
+
+    .hero::after {
+        position: static;
+    }
+
+    /* choise */
+
+    .choise .choise-wrapper li {
+        width: 31%;
+    }
+
+    .collection .collection-wrapper li {
+        width: 23%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .impression .impression-wrapper {
+        display: grid;
+        grid-template-areas: 
+            "item-1 item-2"
+            "item-1 item-4"
+            "item-1 item-4"
+            "item-3 item-4";
+    }
+
+    .impression .impression-wrapper img {
+        max-width: unset;
+    }
+
+    .impression .impression-wrapper .item-1 {
+        grid-row: item-1;
+    }
+    .impression .impression-wrapper .item-2 {
+        grid-row: item-2;
+    }
+    .impression .impression-wrapper .item-3 {
+        grid-row: item-3;
+    }
+    .impression .impression-wrapper .item-4 {
+        grid-row: item-4;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .nav .nav-wrapper {
+        padding: 4px 0 0 0;
+    }
 }

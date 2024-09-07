@@ -2,7 +2,20 @@
 module.exports = {
 	content: ["*.html"],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				black100: '#2C2C2C',
+				purple: '#EAD2E3',
+				purpleHover: '#eee7ec',
+				green: '#D3EAE1',
+				greenHover: '#d4ddd9',
+				grey100: '#565554'
+			},
+		},
+		fontFamily: {
+			'roboto-700': 'Roboto-Bold',
+			'roboto-400': 'Roboto',
+		},
 	},
 	plugins: [],
 }
