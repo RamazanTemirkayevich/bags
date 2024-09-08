@@ -112,6 +112,112 @@
     max-width: 303px;
 }
 
+
+/* accessories */
+
+.accessories {
+    position: relative;
+    max-width: 1312px;
+    margin: auto;
+}
+
+.accessories .accessories-slider,
+.reviews .reviews-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.accessories .accessories-slider__btn-next,
+.accessories .accessories-slider__btn-prev {
+    display: none;
+}
+
+.accessories .accessories-slider .accessories-slider__track .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessories .accessories-slider .accessories-slider__track .swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.accessories .accessories-swiper-pagination,
+.reviews .reviews-swiper-pagination {
+    position: absolute;
+    bottom: 0px !important;
+}
+
+.accessories .swiper-pagination-bullet,
+.reviews .swiper-pagination-bullet {
+    background: #ccc !important;
+    opacity: unset !important;
+}
+
+.accessories .swiper-pagination-bullet-active,
+.reviews .swiper-pagination-bullet-active {
+    background: #000000 !important;
+    opacity: unset !important;
+}
+
+/* reviews */
+
+.reviews {
+    position: relative;
+}
+
+.reviews .reviews-slider .reviews-slider__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews .reviews-slider .reviews-slider__item p {
+    font-family: 'EB Garamond';
+    font-style: italic;
+}
+
+.reviews .reviews-slider__btn-next,
+.reviews .reviews-slider__btn-prev {
+    display: none;
+}
+
+.reviews .reviews-swiper-pagination {
+    width: fit-content !important;
+    bottom: -80px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+
+/* ideal */
+
+.ideal {
+    background: url('./img/bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* contacts */
+
+.contacts .contacts-img {
+    display: flex;
+    object-fit: contain;
+    max-width: 320px;
+}
+
+
+.divider {
+    height: 1px;
+}
+
 @media (min-width: 768px) {
     .choise .choise-wrapper li {
         width: 48%;
@@ -140,6 +246,72 @@
 
     .collection .collection-wrapper li {
         width: 23%;
+    }
+
+    /* accessories */
+
+    .accessories .accessories-slider {
+        width: 102%;
+    }
+
+    .accessories .accessories-slider__btn-prev,
+    .accessories .accessories-slider__btn-next,
+    .reviews .reviews-slider__btn-prev, 
+    .reviews .reviews-slider__btn-next {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -48px !important;
+        right: 0 !important;
+
+        width: 48px;
+        height: 48px;
+
+        border: 1px solid rgb(44, 44, 44);
+        border-radius: 50px;
+        z-index: 12;
+    }
+
+    .accessories .accessories-slider__btn-prev {
+        right: 63px !important;
+    }
+
+    .accessories .accessories-slider__btn-prev img,
+    .reviews .reviews-slider__btn-prev img {
+        transform: rotate(-180deg);
+    }
+
+    .accessories .accessories-swiper-pagination {
+        width: fit-content !important;
+        bottom: -29px !important;
+    }
+
+    /* reviews */
+
+    .reviews .reviews-slider {
+        width: 89%;
+    }
+
+    .reviews .reviews-slider__btn-next,
+    .reviews .reviews-slider__btn-prev {
+        top: 65% !important;
+    }
+
+    .reviews .reviews-slider__btn-prev {
+        left: 0 !important;
+    }
+
+    /* ideal */
+
+    .ideal {
+        height: 482px;
+    }
+
+    /* contacts */
+
+    .contacts .contacts-img {
+        max-width: 600px;
     }
 }
 
@@ -175,5 +347,21 @@
 @media (min-width: 1440px) {
     .nav .nav-wrapper {
         padding: 4px 0 0 0;
+    }
+
+    /* collection */
+
+    .collection-wrapper {
+        max-height: 959px;
+    }
+
+    .collection-wrapper.active {
+        max-height: unset;
+    }
+
+    /* accessories */
+
+    .accessories .accessories-slider {
+        width: 105%;
     }
 }

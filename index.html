@@ -10,6 +10,7 @@
     <link href="./src/main.css" rel="stylesheet">
 
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -19,28 +20,28 @@
                 <nav class="nav z-10 lg:top-0 lg:h-auto lg:bg-inherit lg:py-3">
                     <div class="container h-full">
                         <div class="nav-wrapper flex flex-col justify-between h-full lg:flex-row lg:items-center">
-                            <ul class="flex flex-col gap-2 lg:flex-row lg:gap-3 xl:gap-8">
+                            <ul class="flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-3 xl:gap-8">
                                 <li>
-                                    <a class="text-base" href="#">Сумки</a>
+                                    <a class="text-base" href="#bags">Сумки</a>
                                 </li>
                                 <li>
-                                    <a class="text-base" href="#">Другие аксессуары</a>
+                                    <a class="text-base" href="#accessories">Другие аксессуары</a>
                                 </li>
                                 <li>
-                                    <a class="text-base" href="#">Отзывы</a>
+                                    <a class="text-base" href="#reviews">Отзывы</a>
                                 </li>
                                 <li>
-                                    <a class="text-base" href="#">Контакты</a>
+                                    <a class="text-base" href="#contacts">Контакты</a>
                                 </li>
                             </ul>
                             <a href="#" class="btn btn--purple">Оформить заказ</a>
                         </div>
                     </div>
                 </nav>
-                <div class="header-wrapper__logo">
+                <div class="header-wrapper__logo relative z-20">
                     <img src="./src/icons/logo.svg" alt="">
                 </div>
-                <div class="header-wrapper__burger relative w-7 h-5 lg:hidden">
+                <div class="header-wrapper__burger relative z-20 w-7 h-5 lg:hidden">
                     <span></span>
                 </div>
             </div>
@@ -106,73 +107,248 @@
             </div>
         </section>
         <!--  -->
-        <section class="section">
+        <section class="section" id="bags">
             <div class="container">
                 <div class="collection flex flex-col items-center justify-center my-12 lg:mt-56">
                     <h2 class="title text-center text-2xl mb-3 lg:text-5xl lg:mb-4">Почему выбирают нас?</h2>
                     <span class="text-center text-grey100 xl:w-2/4 xl:m-auto">Создаём сумки с душой. Каждый продукт сделан с любовью и вниманием к деталям, чтобы подчеркнуть вашу индивидуальность.</span>
-                    <ul class="collection-wrapper mt-10 flex flex-wrap gap-8 items-center justify-center w-full md:gap-7 lg:mt-20 lg:items-start xl:justify-between">
-                        <li class="flex flex-col gap-6 items-center justify-center">
+                    <ul class="collection-wrapper mt-10 flex flex-wrap gap-8 items-center justify-center w-full md:gap-7 lg:mt-20 lg:items-start xl:justify-between lg:gap-y-16">
+                        <li class="flex flex-col gap-4 items-center justify-center">
                             <img class="flex object-contain w-full" src="./src/img/collection1.png" alt="">
                             <div class="flex flex-col items-center justify-center">
-                                <p class="text-center mt-2 text-grey100 text-sm">Ice latte</p>
-                                <span>3 450 ₽</span>                    
+                                <p class="text-center text-sm font-bold">Ice latte</p>
+                                <span class="text-xl font-semibold mt-2">3 450 ₽</span>                    
                             </div>
                         </li>
                         <li class="flex flex-col gap-4 items-center justify-center">
                             <img class="flex object-contain w-full" src="./src/img/collection2.png" alt="">
                             <div class="flex flex-col items-center justify-center">
-                                <p class="text-center mt-2 text-grey100 text-sm">Mini desert</p>
-                                <span>3 450 ₽</span>                    
+                                <p class="text-center text-sm font-bold">Mini desert</p>
+                                <span class="text-xl font-semibold mt-2">3 450 ₽</span>                    
                             </div>
                         </li>
                         <li class="flex flex-col gap-4 items-center justify-center">
                             <img class="flex object-contain w-full" src="./src/img/collection3.png" alt="">
                             <div class="flex flex-col items-center justify-center">
-                                <p class="text-center mt-2 text-grey100 text-sm">Summer vibe</p>
-                                <span>4 650 ₽</span>                    
+                                <p class="text-center text-sm font-bold">Summer vibe</p>
+                                <span class="text-xl font-semibold mt-2">4 650 ₽</span>                    
                             </div>
                         </li>
                         <li class="flex flex-col gap-4 items-center justify-center">
                             <img class="flex object-contain w-full" src="./src/img/collection4.png" alt="">
                             <div class="flex flex-col items-center justify-center">
-                                <p class="text-center mt-2 text-grey100 text-sm">Windsend</p>
-                                <span>5 000 ₽</span>                    
+                                <p class="text-center text-sm font-bold">Windsend</p>
+                                <span class="text-xl font-semibold mt-2">5 000 ₽</span>                    
                             </div>
                         </li>
                         <li class="flex flex-col gap-6 items-center justify-center">
                             <img class="flex object-contain w-full" src="./src/img/collection5.png" alt="">
                             <div class="flex flex-col items-center justify-center">
-                                <p class="text-center mt-2 text-grey100 text-sm">Три шоколада</p>
-                                <span>5 750 ₽</span>                    
+                                <p class="text-center text-sm font-bold">Три шоколада</p>
+                                <span class="text-xl font-semibold mt-2">5 750 ₽</span>                    
                             </div>
                         </li>
                         <li class="flex flex-col gap-4 items-center justify-center">
                             <img class="flex object-contain w-full" src="./src/img/collection6.png" alt="">
                             <div class="flex flex-col items-center justify-center">
-                                <p class="text-center mt-2 text-grey100 text-sm">Autumn forest</p>
-                                <span>4 950 ₽</span>                    
+                                <p class="text-center text-sm font-bold">Autumn forest</p>
+                                <span class="text-xl font-semibold mt-2">4 950 ₽</span>                    
                             </div>
                         </li>
                         <li class="flex flex-col gap-4 items-center justify-center">
                             <img class="flex object-contain w-full" src="./src/img/collection7.png" alt="">
                             <div class="flex flex-col items-center justify-center">
-                                <p class="text-center mt-2 text-grey100 text-sm">Brownie</p>
-                                <span>5 750 ₽</span>                    
+                                <p class="text-center text-sm font-bold">Brownie</p>
+                                <span class="text-xl font-semibold mt-2">5 750 ₽</span>                    
                             </div>
                         </li>
                         <li class="flex flex-col gap-4 items-center justify-center">
                             <img class="flex object-contain w-full" src="./src/img/collection8.png" alt="">
                             <div class="flex flex-col items-center justify-center">
-                                <p class="text-center mt-2 text-grey100 text-sm">Sweet</p>
-                                <span>2 950 ₽</span>                    
+                                <p class="text-center text-sm font-bold">Sweet</p>
+                                <span class="text-xl font-semibold mt-2">2 950 ₽</span>                    
                             </div>
                         </li>
                     </ul>
-                    <button type="button" class="btn btn--green">Смотреть все</button>
+                    <button type="button" class="btn btn--green mt-16">Смотреть все</button>
                 </div>
             </div>
         </section>
+        <!--  -->
+        <section class="section" id="accessories">
+            <div>
+                <div class="accessories flex flex-col items-start justify-items-start mt-16 pb-14 lg:mt-56">
+                    <h2 class="title text-start text-2xl mb-3 lg:text-5xl lg:mb-4">Другие аксессуары</h2>
+                    <span class="text-start text-grey100 xl:w-2/4">Мы создаём не только вязаные сумки, но и пледы, интерьерные корзины и вязаные чехлы на декоративные подушки. Каждое изделие выполнено вручную с особым вниманием к деталям и стилю.</span>
+                    <div class="accessories-slider swiper mt-20 lg:justify-items-start">
+                        <div class="accessories-slider__track swiper-wrapper">
+                            <div class="accessories-slider__item swiper-slide">
+                                <img src="./src/img/accessories1.png" alt="">
+                            </div>
+                            <div class="accessories-slider__item swiper-slide">
+                                <img src="./src/img/accessories2.png" alt="">
+                            </div>
+                            <div class="accessories-slider__item swiper-slide">
+                                <img src="./src/img/accessories3.png" alt="">
+                            </div>
+                            <div class="accessories-slider__item swiper-slide">
+                                <img src="./src/img/accessories4.png" alt="">
+                            </div>
+                            <div class="accessories-slider__item swiper-slide">
+                                <img src="./src/img/accessories2.png" alt="">
+                            </div>
+                            <div class="accessories-slider__item swiper-slide">
+                                <img src="./src/img/accessories1.png" alt="">
+                            </div>
+                            <div class="accessories-slider__item swiper-slide">
+                                <img src="./src/img/accessories4.png" alt="">
+                            </div>
+                            <div class="accessories-slider__item swiper-slide">
+                                <img src="./src/img/accessories3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="accessories-slider__btn-prev">
+                        <img src="/src/icons/arrow.svg" alt="">
+                    </button>
+                    <button class="accessories-slider__btn-next">
+                        <img src="/src/icons/arrow.svg" alt="">
+                    </button>
+                    <div class="accessories-swiper-pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="section" id="reviews">
+            <div class="container">
+                <div class="reviews flex flex-col items-center justify-items-start mt-16 lg:mt-56">
+                    <h2 class="title text-center text-2xl mb-3 lg:text-5xl lg:mb-4">Что говорят клиенты</h2>
+                    <div class="reviews-slider swiper mt-20 lg:justify-items-start">
+                        <div class="reviews-slider__track swiper-wrapper">
+                            <div class="reviews-slider__item swiper-slide flex flex-col items-center justify-items-center">
+                                <p class="font-bold text-center mb-8 text-xl">"Эта вязаная сумочка стала моим любимым аксессуаром! Очень стильная и качественная, а главное — уникальная. Определённо стоит каждой копейки!"</p>
+                                <span class="text-center text-grey100">Анна К.</span>
+                            </div>
+                            <div class="reviews-slider__item swiper-slide">
+                                <p class="font-bold text-center mb-8 text-xl">"Я в восторге от своей новой сумочки! Ручная работа чувствуется в каждой детали. Удобная, вместительная и невероятно красивая. Теперь она со мной повсюду!"</p>
+                                <span class="text-center text-grey100">Марина С.</span>
+                            </div>
+                            <div class="reviews-slider__item swiper-slide">
+                                <p class="font-bold text-center mb-8 text-xl">"Настоящее произведение искусства! Прекрасное сочетание дизайна и функциональности. Носить её одно удовольствие, а комплименты не заставляют себя ждать."</p>
+                                <span class="text-center text-grey100">Екатерина М.</span>
+                            </div>
+                            <div class="reviews-slider__item swiper-slide">
+                                <p class="font-bold text-center mb-8 text-xl">"Эта вязаная сумочка стала моим любимым аксессуаром! Очень стильная и качественная, а главное — уникальная. Определённо стоит каждой копейки!"</p>
+                                <span class="text-center text-grey100">Анна К.</span>
+                            </div>
+                            <div class="reviews-slider__item swiper-slide">
+                                <p class="font-bold text-center mb-8 text-xl">"Настоящее произведение искусства! Прекрасное сочетание дизайна и функциональности. Носить её одно удовольствие, а комплименты не заставляют себя ждать."</p>
+                                <span class="text-center text-grey100">Екатерина М.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="reviews-slider__btn-prev">
+                        <img src="/src/icons/arrow.svg" alt="">
+                    </button>
+                    <button class="reviews-slider__btn-next">
+                        <img src="/src/icons/arrow.svg" alt="">
+                    </button>
+                    <div class="reviews-swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section>
+            <div class="ideal mt-56">
+                <div class="ideal-wrapper py-12 px-5 lg:py-28 lg:px-16">
+                    <div class="ideal-wrapper__info flex flex-col items-start justify-items-start lg:w-8/12 xl:w-6/12">
+                        <h4 class="title text-3xl mb-6 lg:text-5xl">Готовы выбрать свою идеальную сумку?</h4>
+                        <p class="text-lg">Закажите сейчас и получите бесплатную доставку по Крыму</p>
+                        <a href="#" class="btn btn--green mt-10 h-12">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="section" id="contacts">
+            <div class="container">
+                <div class="contacts mt-28 flex flex-col gap-10 md:flex-row md:items-start md:justify-between xl:gap-20">
+                    <img class="contacts-img" src="./src/img/contacts.png" alt="">
+                    <div class="xl:w-10/12">
+                        <div class="avatar flex items-start gap-6">
+                            <img src="./src/img/avatar.png" alt="" class="w-24 h-24 ">
+                            <div>
+                                <img src="./src/icons/logo.svg" class="" alt="">
+                                <span class="text-grey100">Для оформления заказа свяжитесь с нами удобным для вас способом</span>
+                            </div>
+                        </div>
+                        <div class="mt-12 lg:mt-16">
+                            <h4>Контакты</h4>
+                            <ul class="mt-4">
+                                <li>
+                                    <a href="tel:+79780711027" class="flex items-center gap-2 py-1">
+                                        <img src="./src/icons/phone.svg" alt="">
+                                        <span>+7 978 071-10-27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+79789028442" class="flex items-center gap-2 py-1">
+                                        <img src="./src/icons/phone.svg" alt="">
+                                        <span>+7 978 902-84-42</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center gap-2 py-1">
+                                        <img src="./src/icons/telegram.svg" alt="">
+                                        <span>Telegram</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:bagofyourmood@yandex.ru" class="flex items-center gap-2 py-1">
+                                        <img src="./src/icons/email.svg" alt="">
+                                        <span>bagofyourmood@yandex.ru</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 lg:mt-8">
+                            <h4>Социальные сети</h4>
+                            <ul class="mt-5 flex flex-col gap-4">
+                                <li><a href="#" class="btn btn--purple w-fit">VKontakte</a></li>
+                                <li><a href="#" class="btn btn--green w-fit">Telegram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <footer class="section">
+            <div class="container">
+                <div class="mt-28 pt-12 pb-5 flex flex-col items-center justify-center">
+                    <img src="./src/icons/logo.svg" alt="">
+                    <ul class="mt-10 mb-10 flex flex-col items-center justify-center gap-4 md:flex-row md: md:mt-8 md:gap-8">
+                        <li>
+                            <a href="#bags" class="text-center">Сумки</a>
+                        </li>
+                        <li>
+                            <a href="#accessories">Другие аксессуары</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="divider w-full bg-black100"></div>
+                    <span class="mt-8">© 2024 b.bags. Все права защищены.</span>
+                </div>
+            </div>
+        </footer>
     </main>
+
+    <script src="./src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
